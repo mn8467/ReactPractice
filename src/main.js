@@ -1,15 +1,24 @@
 import './App.css';
+<<<<<<< HEAD
 import Topb from'./components/topbar';
 import AutoSlide from './AutoSlide/AutoSlide';
 import Banner from './components/banner/banner';
 import Midbar from './components/midbar';
 import Midban from './components/midbanner/midban';
+=======
+import './components/topbar.js';
+import * as topbar from'./components/topbar.js';
+import AutoSlide from './AutoSlide/AutoSlide';
+import Banner from './components/banner/banner';
+
+>>>>>>> c280d2598ab2818ee595723aa1c05290846be587
 
 function App() {
   
   return (
     <div>
       <Topb />
+
       {/*나중에 foreach 로 있는 데이터만 가져올거임 */}
       <div className="flex-row justify-center px-1 min-h-auto">
         <div className="flex-row grid overflow-x-auto lg:grid-cols-8 sm:grid-cols-2 md:grid-cols-4 ">
@@ -48,7 +57,8 @@ function App() {
         <Midbar />
       </div>
       <Midban />
-      </div>
+    </div>
+
   )
 }
 

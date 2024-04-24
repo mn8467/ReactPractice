@@ -34,6 +34,7 @@ export default function Banner() {
                         {slides.map((s, i) => (<li key={i} className={"big"}>
                                 <div className="item">
                                     <p>{s.title}{s.content}</p>
+
                                 </div>
                             </li>
                         ))}
@@ -42,6 +43,7 @@ export default function Banner() {
                         {slides.map((s, i) => (<li key={i} className={"big"}>
                                 <div className="item">
                                     <p>{s.title}{s.content}</p>
+
                                 </div>
                             </li>
                         ))}

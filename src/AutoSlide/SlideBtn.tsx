@@ -1,7 +1,6 @@
 import { DirectionBtnType } from "./Interface";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
-
 function SlideBtn({ direction, onClick }: DirectionBtnType) {
   return (
     <div

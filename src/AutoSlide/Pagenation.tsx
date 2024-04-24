@@ -1,3 +1,5 @@
+
+import React from "react";
 import { slideArr, PaginationBtnType } from "./Interface";
 
 function Pagination({ slideIndex, setSlideIndex }: PaginationBtnType) {
