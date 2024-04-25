@@ -7,7 +7,7 @@ export default function topb(){
           <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
             <div className="flex justify-between mx-auto items-center ">
                {/* mobile menu */}
-               <div className="md:hidden md:justify-start flex-row justify-end items-center">
+               <div className="md:hidden md:justify-start flex flex-row justify-end">
                   <button className="">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-12 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
@@ -17,7 +17,7 @@ export default function topb(){
               {/* 메뉴 h:세로 = 3:10 비율 */} 
               <div className="flex justify-center items-center  ">
                   <p href="#" className="flex">
-                    <h2 className="fon2">SHOPNAME</h2>
+                    <h2 className="fon2 px-3 py-3">SHOPNAME</h2>
                   </p>
                 <div className=" items-center max-h-11 overflow-hidden hover:bg-gray-500 hidden md:flex">
                   <a href="#" className="flex items-center py-5 px-2 text-gray-700">

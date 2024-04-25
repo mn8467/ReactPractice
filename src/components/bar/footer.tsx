@@ -16,8 +16,9 @@ export default function footer(){
                         <p className="px-5">CPO.수퍼에이전시(shopname@superagency.co.kr)</p>
                         <p className="px-5">hosting provider. cafe24</p>
                     </div>
-                    <div className="flex fon3 text-base">
+                    <div className="flex justify-between fon3 text-base">
                         <p className="px-5 py-5">© 2024 SUPERAGENCY. All rights reserved.</p>
+                        <p className="px-5 py-5">SITE BY JUNG.</p>
                     </div>
                 </div>
             </nav>
