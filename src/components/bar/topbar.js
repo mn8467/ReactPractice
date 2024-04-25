@@ -1,6 +1,7 @@
 import {GiShoppingCart} from"react-icons/gi";
-import "./bar.css";
-export function topb(){
+
+
+export default function topb(){
     return(
         <nav className="fixed top-0 w-full z-50 bg-white shadow-md">
           <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
@@ -14,9 +15,9 @@ export function topb(){
                   </button>
                 </div>
               {/* 메뉴 h:세로 = 3:10 비율 */} 
-              <div className="flex sm:justify-center items-center ">
-                  <p  className=" text-gray-700 border-x-gray-800 ">
-                      <h1 className="fon">SHOPNAME</h1>
+              <div className="flex justify-center items-center  ">
+                  <p href="#" className="flex">
+                    <h2 className="fon2">SHOPNAME</h2>
                   </p>
                 <div className=" items-center max-h-11 overflow-hidden hover:bg-gray-500 hidden md:flex">
                   <a href="#" className="flex items-center py-5 px-2 text-gray-700">
@@ -50,5 +51,3 @@ export function topb(){
         </nav>
     )
 }
-
-export default topb;

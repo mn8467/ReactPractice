@@ -1,17 +1,13 @@
 import './App.css';
-<<<<<<< HEAD
-import Topb from'./components/topbar';
+import Topb from'./components/bar/topbar';
 import AutoSlide from './AutoSlide/AutoSlide';
 import Banner from './components/banner/banner';
-import Midbar from './components/midbar';
+import Midbar from './components/bar/midbar';
 import Midban from './components/midbanner/midban';
-=======
-import './components/topbar.js';
-import * as topbar from'./components/topbar.js';
-import AutoSlide from './AutoSlide/AutoSlide';
-import Banner from './components/banner/banner';
+import Bottombar from './components/bar/bottombar';
+import Lowbotbar from './components/bar/lowbotbar';
+import Footer from './components/bar/footer';
 
->>>>>>> c280d2598ab2818ee595723aa1c05290846be587
 
 function App() {
   
@@ -57,7 +53,22 @@ function App() {
         <Midbar />
       </div>
       <Midban />
+      <Bottombar />
+      <div className="flex-row grid overflow-x-auto pb-1 py-0.5 lg:grid-cols-9 sm:grid-cols-3 md:grid-cols-6 ">
+            <div className="col-span-3 px-0.5 py-0.5">
+              <img src={process.env.PUBLIC_URL + '/image/main/add/row2in1.png'} className="h-full w-full"></img>
+            </div>
+            <div className="col-span-3 px-0.5 py-0.5">
+            <img src={process.env.PUBLIC_URL + '/image/main/add/row2in2.png'} className="h-full w-full"></img>
+            </div>
+            <div className="col-span-3 px-0.5 py-0.5">
+            <img src={process.env.PUBLIC_URL + '/image/main/add/row2in3.png'} className="h-full w-full"></img>
+            </div>
+        </div>
+        <Lowbotbar />
+        <Footer />
     </div>
+
 
   )
 }
