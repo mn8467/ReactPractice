@@ -1,6 +1,5 @@
 import './App.css';
 import Topb from'./components/bar/topbar';
-import AutoSlide from './AutoSlide/AutoSlide';
 import Banner from './components/banner/banner';
 import Midbar from './components/bar/midbar';
 import Midban from './components/midbanner/midban';

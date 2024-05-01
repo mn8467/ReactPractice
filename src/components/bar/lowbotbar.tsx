@@ -3,8 +3,8 @@ import "./bar.css";
 export default function lowbotbar(){
     return(
         <>
-            <div className="flex flex-row justify-start">
-                <div className="py-6 px-6">
+            <div className="flex md:flex-row sm:flex-col ">
+                <div className="flex py-6 px-6">
                     <ul>
                         <h2 className="fon2 text-xl">INFORMATION</h2>
                         <li>
@@ -13,7 +13,7 @@ export default function lowbotbar(){
                         </li>
                     </ul>
                 </div>
-                <div className="py-6 px-36">
+                <div className="flex py-6 md:px-36 sm:px-6">
                     <ul>
                         <h1 className="fon2 text-xl">COSTOMER SERVICE</h1>
                         <li>
@@ -28,8 +28,8 @@ export default function lowbotbar(){
                         </li>
                     </ul>
                 </div>
-                <div className="py-6 px-16">
-                <ul>
+                <div className="flex py-6 px-6">
+                    <ul>
                         <h1 className="fon2 text-xl">SOCIAL</h1>
                         <li>
                         <br/>
@@ -40,6 +40,7 @@ export default function lowbotbar(){
                     </ul>
                 </div>
             </div>
+               
         </>
     )
 }
