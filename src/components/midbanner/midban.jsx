@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,11 +12,35 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Scrollbar } from 'swiper/modules';
 
-export default function midban() {
+export default function Midban() {
+
+  const [slidesPerView, setSlidesPerView] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 640) {
+        setSlidesPerView(1);
+      } else if (window.innerWidth <= 1024) {
+        setSlidesPerView(2);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
     <div>
+      <div className="hidden" id="winSize">size</div>
+
       <Swiper scrollbar={{hide: false, size:1 }}
-        slidesPerView={4}
+        slidesPerView={slidesPerView} // 페이지의 창 크기가 640px 미만일 때 1장, 그 이상일 때 4장 표시
         spaceBetween={30}
         centeredSlides={false}
         modules={[Scrollbar,Pagination]} className="mySwiper">

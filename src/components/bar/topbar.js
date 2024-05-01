@@ -1,24 +1,59 @@
 import {GiShoppingCart} from"react-icons/gi";
+import React,{useState} from "react";
+import classNames from "classnames";
+import "./bar.css";
 
+export default function Topb(){
 
-export default function topb(){
-    return(
+  const [menuToggle, setMenuToggle] = useState(false);
+   
+  return(
         <nav className="fixed top-0 w-full z-50 bg-white shadow-md">
           <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
             <div className="flex justify-between mx-auto items-center ">
+              
                {/* mobile menu */}
                <div className="md:hidden md:justify-start flex flex-row justify-end">
-                  <button className="">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-12 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                  </button>
+               <button onClick={() => setMenuToggle(!menuToggle)}>
+              {menuToggle ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </button>
                 </div>
+               
               {/* 메뉴 h:세로 = 3:10 비율 */} 
               <div className="flex justify-center items-center  ">
-                  <p href="#" className="flex">
+                  <a href="#" className="flex">
                     <h2 className="fon2 px-3 py-3">SHOPNAME</h2>
-                  </p>
+                  </a>
                 <div className=" items-center max-h-11 overflow-hidden hover:bg-gray-500 hidden md:flex">
                   <a href="#" className="flex items-center py-5 px-2 text-gray-700">
                   <span className="px-2 py-auto bottom-1.5 text-xs">신상품 </span>
@@ -47,6 +82,18 @@ export default function topb(){
               </div>
                  
             </div>
+              {/* mobile menu items */}
+              <div className={classNames("md:hidden", { hidden: !menuToggle })}>
+                          <a href="#" className="fon1 block py-2 px-4 text-lg hover:bg-gray-200">
+                            신상품
+                          </a>
+                          <a href="#" className="fon1 block py-2 px-4 text-lg hover:bg-gray-200">
+                            샵
+                          </a>
+                          <a href="#" className="fon1 block py-2 px-4 text-lg text-red-600  hover:bg-gray-200">
+                            세일
+                          </a>
+                        </div>
           </div>
         </nav>
     )
