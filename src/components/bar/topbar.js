@@ -2,13 +2,14 @@ import {GiShoppingCart} from"react-icons/gi";
 import React,{useState} from "react";
 import classNames from "classnames";
 import "./bar.css";
+import { Route } from "react-router-dom";
 
 export default function Topb(){
 
   const [menuToggle, setMenuToggle] = useState(false);
    
   return(
-        <nav className="fixed top-0 w-full z-50 bg-white shadow-md">
+        <nav className=" fixed top-0 w-full z-50 bg-white shadow-md">
           <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
             <div className="flex justify-between mx-auto items-center ">
               
@@ -51,21 +52,21 @@ export default function Topb(){
                
               {/* 메뉴 h:세로 = 3:10 비율 */} 
               <div className="flex justify-center items-center  ">
-                  <a href="#" className="flex">
+                  <a href="/" className="flex">
                     <h2 className="fon2 px-3 py-3">SHOPNAME</h2>
                   </a>
                 <div className=" items-center max-h-11 overflow-hidden hover:bg-gray-500 hidden md:flex">
-                  <a href="#" className="flex items-center py-5 px-2 text-gray-700">
+                  <a href="/newarrival" className="flex items-center py-5 px-2 text-gray-700">
                   <span className="px-2 py-auto bottom-1.5 text-xs">신상품 </span>
                   </a>
                 </div>
                 <div className="max-h-11 overflow-hidden hover:bg-gray-500 hidden md:flex">
-                  <a href="#" className="flex items-center py-5 px-2 text-gray-700 ">
+                  <a href="/shop" className="flex items-center py-5 px-2 text-gray-700 ">
                   <span className="px-3 py-auto bottom-1.5 text-xs ">샵 </span>
                   </a>
                 </div>
                 <div className="max-h-11 overflow-hidden  hover:bg-gray-500 hidden md:flex">
-                  <a href="#" className="flex items-center py-5 px-2 text-red-600 ">
+                  <a href="/sale" className="flex items-center py-5 px-2 text-red-600 ">
                   <span className="px-3 py-auto bottom-1.5 text-xs ">세일 </span>
                   </a>
                 </div>
