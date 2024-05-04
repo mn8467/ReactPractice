@@ -9,6 +9,7 @@ export default function Topb(){
   const [menuToggle, setMenuToggle] = useState(false);
    
   return(
+    <header className="row-span-3 col-span-12">
         <nav className=" fixed top-0 w-full z-50 bg-white shadow-md">
           <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
             <div className="flex justify-between mx-auto items-center ">
@@ -96,6 +97,33 @@ export default function Topb(){
                           </a>
                         </div>
           </div>
+              <ChangePath />
         </nav>
+    </header>
     )
+}
+
+{/* 다른 페이지의 topbar 추가 */}
+function ChangePath() {
+  const currentPath = window.location.pathname;
+  console.log(currentPath);
+  
+  if (currentPath === '/shop') {
+    return ( 
+      <nav>
+        <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
+          <div className="flex justify-between mx-auto items-center ">
+            {/* 메뉴 h:세로 = 3:10 비율 */} 
+            <div className="flex justify-between items-center  ">
+              <a href="/" className="flex">
+                <h2 className=" px-8 py-3">샵</h2>
+              </a>
+            </div>
+          </div>        
+        </div>
+      </nav>
+    );
+  } else {
+    return null;
+  }
 }

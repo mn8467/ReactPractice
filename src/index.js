@@ -6,25 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import ShopPage from './pages/shop';
 import Topb from './components/bar/topbar';
-import Lowbotbar from './components/bar/lowbotbar';
 import Footer from './components/bar/footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <React.StrictMode>
-    <Topb />
-
-    <BrowserRouter>
-        <Routes>
-          
-          <Route path="/" element={<App />}></Route>
-          <Route exact path="/shop" element={<ShopPage />}></Route>
-        </Routes>
-      </BrowserRouter>
-    
-    <Lowbotbar /> {/*Information , customer service, social*/}
-    <Footer /> {/* 회사 정보 */}
+    <div className="grid grid-rows-3 grid-cols-12 gap-2 h-0">
+          <Topb />
+          <BrowserRouter>
+              <Routes>
+                <Route exact path="/" element={<App />}></Route>   {/*main col 12*/}
+                <Route exact path="/shop" element={<ShopPage />}></Route> {/* nav col 2 , main col 10 */}
+              </Routes>
+            </BrowserRouter>
+          <footer className="row-span-3 col-span-12">
+           {/*Information , customer service, social*/}
+            <Footer /> {/* 회사 정보 */}
+          </footer>
+    </div>
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

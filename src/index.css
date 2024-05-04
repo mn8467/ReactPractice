@@ -15,13 +15,3 @@ code {
     monospace;
 }
 
-#wrapper{
-  height: auto;
-  min-height: 100%;
-  padding-bottom: 176px;
-}
-footer{
-  height: 176px;
-  position : relative;
-  transform : translateY(-100%);
-}

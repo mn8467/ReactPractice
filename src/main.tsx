@@ -7,9 +7,9 @@ import Bottombar from './components/bar/bottombar';
 function App() {
   
   return (
-    <div>
+    <main className="row-span-3 col-span-12">
       {/*나중에 foreach 로 있는 데이터만 가져올거임 */}
-      <div className="flex-row justify-center px-1 min-h-auto">
+      <div className="flex-row justify-center px-1 min-h-0">
         <div className="flex-row grid overflow-x-auto lg:grid-cols-8 sm:grid-cols-2 md:grid-cols-4 ">
             <div className="col-span-2 px-0.5 py-0.5">
               <img src={process.env.PUBLIC_URL + '/image/main/add/row1.png'} className="h-full w-full"></img>
@@ -58,7 +58,7 @@ function App() {
             <img src={process.env.PUBLIC_URL + '/image/main/add/row2in3.png'} className="h-full w-full"></img>
             </div>
         </div>
-    </div>
+    </main>
 
 
   )
