@@ -10,7 +10,7 @@ export default function Topb(){
    
   return(
     <header className="row-span-3 col-span-12">
-        <nav className=" fixed top-0 w-full z-50 bg-white shadow-md">
+        <nav className=" fixed top-0 w-full z-50 bg-white">
           <div className="px-1 border-t-1 border-r-1 border-l-1 overflow-hidden"> 
             <div className="flex justify-between mx-auto items-center ">
               
@@ -95,7 +95,12 @@ export default function Topb(){
                           <a href="#" className="fon1 block py-2 px-4 text-lg text-red-600  hover:bg-gray-200">
                             세일
                           </a>
-                        </div>
+                    <div className="">
+                      <a href="#" className="fon1 block py-2 px-4 text-lg hover:bg-blue-500 ">
+                        로그인 {/* 로그인 창으로 이동, 회원가입은 그 페이지에서 있도록 */}
+                      </a>
+                    </div>
+              </div>
           </div>
               <ChangePath />
         </nav>
