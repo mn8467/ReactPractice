@@ -8,10 +8,10 @@ Tool : Visual studio code, github <br/>
 * 중간 크기 창
 <img src="https://res.cloudinary.com/generative-ai-demos/image/upload/f_auto/q_auto/v1/ugc/recolor/ezcwl25h3fhzpwnztjom"  width="800" height="400"/>
 * 작은 크기 창
-<img src = "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/small.gif" width="800" height="400"/>
+<img src = "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/small.gif" width="624" height="996"/>
 * 배너 기능
-<img src= "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/bannerhover.gif"  width="800" height="400"/>
+<img src= "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/bannerhover.gif"  width="800" height="89"/>
 * 슬라이드 기능
-<img src= "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/slider.gif"  width="800" height="400"/>
+<img src= "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/slider.gif"  width="640" height="892"/>
 * 햄버거 메뉴 기능
-<img src= "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/manuhamberger.gif"  width="800" height="400"/>
+<img src="https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/manuhamberger.gif"  width="624" height="996"/>
