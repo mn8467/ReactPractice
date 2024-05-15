@@ -4,9 +4,9 @@ Tool : Visual studio code, github <br/>
 
 # 화면 기능 시현
 * 전체 크기 창
-<img src="https://res.cloudinary.com/generative-ai-demos/image/upload/f_auto/q_auto/v1/ugc/recolor/p2frw2iezu6jtdt0wz82"  width="800" height="400"/>
+<img src="https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/big.gif"  width="800" height="390"/>
 * 중간 크기 창
-<img src="https://res.cloudinary.com/generative-ai-demos/image/upload/f_auto/q_auto/v1/ugc/recolor/ezcwl25h3fhzpwnztjom"  width="800" height="400"/>
+<img src="https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/middle.gif"  width="800" height="778"/>
 * 작은 크기 창
 <img src = "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/small.gif" width="624" height="996"/>
 * 배너 기능
