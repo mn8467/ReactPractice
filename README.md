@@ -14,4 +14,4 @@ Tool : Visual studio code, github <br/>
 * 슬라이드 기능
 <img src= "https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/slider.gif"  width="640" height="892"/>
 * 햄버거 메뉴 기능
-<img src="https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/manuhamberger.gif"  width="624" height="996"/>
+<img src="https://github.com/mn8467/ReactPractice/blob/master/public/image/main/readme/menuhamberger.gif"  width="624" height="996"/>
