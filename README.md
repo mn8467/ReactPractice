@@ -1,6 +1,8 @@
+<h1>쇼핑몰 메인 페이지 클론 코딩 (스컬프스토어)</h1>
+
 환경 : Tailwindcss, SASS, React, SWIPER <br/>
 Tool : Visual studio code, github <br/>
-프로젝트 : 쇼핑몰 클론 코딩 + BackEnd(직접 구상하고 만들어보기)
+
 
 # 화면 기능 시현
 * 전체 크기 창
