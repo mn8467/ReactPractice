@@ -1,6 +1,6 @@
 <h1>쇼핑몰 메인 페이지 클론 코딩 (스컬프스토어)</h1>
 
-환경 : Tailwindcss, SASS, React, SWIPER <br/>
+환경 : Tailwindcss, SASS, React, SWIPER, TypeScript <br/>
 Tool : Visual studio code, github <br/>
 
 
